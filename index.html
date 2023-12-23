@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <section class="container">
-        
-        <nav class="nav-bar">
-            <input type="input" onchange="onChangeName(event)">
-            <button onclick="onClick()">Find</button>
-        </nav>
+    <main class="container">
+        <div class="wrapper">
+            <span class="percent percent-female"></span>
+            <span class="percent percent-male"></span>
 
-        <div class="gender">
-            <div class="male"></div>
-            <div class="female"></div>
+            <img class="img female" src="img/gender_female.jpg" alt="">
+            <img class="img male" src="img/gender_male.jpg" alt="">
+
+            <div class="info">
+                <input class="name-info" type="text" placeholder="Enter your name..." onchange="onChangeName(event)">
+                <button class="button-info" onclick="onClick()">Check</button>
+            </div>
         </div>
+    </main>
 
-        <!--<img id="genderImg" src="" alt="Gender">-->
-    </section>
     <script src="script.js"></script>
 </body>
+
 </html>
