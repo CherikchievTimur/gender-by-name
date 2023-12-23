@@ -84,6 +84,9 @@ const redrawImages = (genderPercentage) => {
     female.style.clipPath = `inset(0px ${percentageMale}% 0px 0px)`;
     male.style.clipPath = `inset(0px 0px 0px ${percentageFemale}%)`;
 
+    percentFemale.style.top = `${femaleBounding.top + 30}px`
+    percentMale.style.top = `${femaleBounding.top + 30}px`
+
     if (genderPercentage.female) {
         percentFemale.textContent = (genderPercentage.female * 100).toFixed(0);
         percentFemale.style.left = `${femaleBounding.left + femaleBounding.width * pFemale - 40}px`
